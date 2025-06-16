@@ -1,0 +1,166 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #181818;
+    
+}
+
+
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600;700&display=swap');
+
+
+.header * {
+  box-sizing: border-box;
+}
+
+.header a {
+  color: #6b7280;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 1rem;
+  transition: color 0.3s ease;
+}
+
+.header a:hover,
+.header a:focus {
+  color: rgb(234, 99, 9);
+  outline: none;
+}
+
+.header header {
+  position: sticky;
+  top: 0;
+  width: 100%;
+  background-color: #000000;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+}
+
+.header_container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 64px;
+  background-color: #000000;
+}
+
+.header .logo {
+  font-size: 1.75rem;
+  font-weight: 700;
+  color: rgb(234, 99, 9);
+  user-select: none;
+}
+
+.header nav {
+  display: flex;
+  align-items: center;
+  gap: 1.75rem;
+}
+
+.header nav a {
+  position: relative;
+  padding: 0.25rem 0;
+  color: #e1e2e3;
+}
+
+.header nav a::after {
+  
+    content: '';
+  position: absolute;
+  bottom: -4px;
+  left: 50%;
+  width: 0;
+  height: 2px;
+  background-color: rgb(234, 99, 9);
+  border-radius: 1rem;
+  transition: width 0.3s ease, left 0.3s ease;
+}
+
+.header nav a:hover::after,
+.header nav a:focus::after {
+  width: 100%;
+  left: 0;
+    
+}
+
+.header .cta-button {
+  background-color: #e1e2e3;
+  color: rgb(234, 99, 9);
+  font-weight: 700;
+  font-size: 1rem;
+  padding: 0.5rem 1.5rem;
+  border-radius: 0.75rem;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  font-family: 'Poppins', sans-serif;
+}
+
+.header .cta-button:hover,
+.header .cta-button:focus {
+  background-color: #dfc7b5;
+  outline: none;
+  transform: scale(1.05);
+}
+
+@media (max-width: 640px) {
+  .header_container {
+    padding: 0 1rem;
+  }
+  .header nav {
+    gap: 1rem;
+  }
+  .header .cta-button {
+    padding: 0.4rem 1rem;
+    font-size: 0.9rem;
+  }
+}
+
+
+.container {
+    
+    margin: 0 ;
+    width: 100% ;
+    height: 580px;
+    background-image: url(backgr.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.line1{
+    margin-top: 0;
+    padding-top: 180px;
+    font-size: 70px;
+    margin-bottom: 16px;
+    color: #ffffff;
+    
+}
+.line2{
+    margin-top: 14px;
+    font-size: 100px;
+    color: rgb(234, 99, 9);
+}
+.label{
+    padding-left: 30px;
+
+    
+    
+}
+
+
+
+footer {
+    background-color: #000000;
+    text-align: center;
+    padding: 10px;
+    position: relative;
+    bottom: 0;
+    height: 40px;
+    width: 100%;
+    color: rgb(234, 99, 9)
+}
+
